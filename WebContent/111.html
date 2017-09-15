@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/kk/res/jq/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("getAllUser",function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>向页面发送 HTTP GET 请求，然后获得返回的结果</button>
+
+</body>
+</html>
